@@ -6,12 +6,15 @@
 
 
 utec::first::linked_list_t::linked_list_t(const utec::linked_list_t& other) {
-
+	head_ = other.head_;
+	tail_ = other.tail_;
+	size_ = other.size_;
 }
 
 utec::linked_list_t& utec::first::linked_list_t::operator=(const utec::linked_list_t& other) {
-
-	// TO DO
+	head_ = other.head_;
+	tail_ = other.tail_;
+	size_ = other.size_;
 
 	return *this;
 }
